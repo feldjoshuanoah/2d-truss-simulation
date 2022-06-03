@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Node.h"
-#include <string>
 
 /**
  * Represents a truss connecting two nodes in a straight line.

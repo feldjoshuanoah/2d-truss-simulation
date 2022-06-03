@@ -1,7 +1,5 @@
 #pragma once
 
-#include <string>
-
 /**
  * Represents a node at a 2-dimensional position.
  */

@@ -1,5 +1,4 @@
 #include "Truss.h"
-#include <cmath>
 
 Truss::Truss(Node first, Node second): first{first}, second{second} {}
 
