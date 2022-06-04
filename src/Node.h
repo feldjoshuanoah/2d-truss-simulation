@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Force.h"
+#include "Support.h"
 
 /**
  * Represents a node at a 2-dimensional position.
@@ -19,6 +20,10 @@ class Node
 	 * The force acting on the node.
 	 */
 	Force force;
+	/**
+	 * The support holding the node.
+	 */
+	Support support;
 
 public:
 	/**
@@ -72,10 +77,24 @@ public:
 	void setForce(Force force);
 
 	/**
+	 * Gets the support holding this node.
+	 * 
+	 * @returns The support.
+	 */
+	Support getSupport();
+
+	/**
+	 * Sets the support holding this node.
+	 * 
+	 * @param support The support.
+	 */
+	void setSupport(Support support);
+
+	/**
 	 * Gets the distance between this node and another, defined as @f$d(A, B) = \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2}@f$.
 	 * 
-	 * @param o The other location.
+	 * @param other The other node.
 	 * @returns The distance.
 	 */
-	float distance(Node o);
+	float distance(Node other);
 };

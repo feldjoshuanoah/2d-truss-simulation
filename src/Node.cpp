@@ -33,7 +33,17 @@ void Node::setForce(Force force)
 	this->force = force;
 }
 
-float Node::distance(Node o)
+Support Node::getSupport()
 {
-	return std::sqrt(std::pow(x - o.getX(), 2) + std::pow(y - o.getY(), 2));
+	return support;
+}
+
+void Node::setSupport(Support support)
+{
+	this->support = support;
+}
+
+float Node::distance(Node other)
+{
+	return std::sqrt(std::pow(x - other.getX(), 2) + std::pow(y - other.getY(), 2));
 }
