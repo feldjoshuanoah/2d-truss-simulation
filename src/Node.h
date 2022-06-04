@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Force.h"
+
 /**
  * Represents a node at a 2-dimensional position.
  */
@@ -13,6 +15,10 @@ class Node
 	 * The y-component of the position.
 	 */
 	float y;
+	/**
+	 * The force acting on the node.
+	 */
+	Force force;
 
 public:
 	/**
@@ -50,6 +56,20 @@ public:
 	 * @param y The y-coordinate.
 	 */
 	void setY(float y);
+
+	/**
+	 * Gets the force acting on this node.
+	 * 
+	 * @returns The force.
+	 */
+	Force getForce();
+
+	/**
+	 * Sets the force acting on this node.
+	 * 
+	 * @param force The force.
+	 */
+	void setForce(Force force);
 
 	/**
 	 * Gets the distance between this node and another, defined as @f$d(A, B) = \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2}@f$.

@@ -23,7 +23,17 @@ void Node::setY(float y)
 	this->y = y;
 }
 
-void Node::distance(Node o)
+Force Node::getForce()
+{
+	return force;
+}
+
+void Node::setForce(Force force)
+{
+	this->force = force;
+}
+
+float Node::distance(Node o)
 {
 	return std::sqrt(std::pow(x - o.getX(), 2) + std::pow(y - o.getY(), 2));
 }
