@@ -36,6 +36,7 @@ public:
 	/**
 	 * Constructs a new Node with the given coordinates.
 	 * 
+	 * @param id The id of this new node.
 	 * @param x The x-coordinate of this new node.
 	 * @param y The y-coordinate of this new node.
 	 */
