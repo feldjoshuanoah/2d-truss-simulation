@@ -21,8 +21,8 @@ public:
 	/**
 	 * Constructs a new Truss with the given Nodes.
 	 * 
-	 * @param x The first connected node.
-	 * @param y The second connected node.
+	 * @param x The first connected node of this new truss.
+	 * @param y The second connected node of this new truss.
 	 */
 	Truss(Node first, Node second);
 

@@ -23,8 +23,8 @@ public:
 	/**
 	 * Constructs a new Force with the given magnitudes.
 	 * 
-	 * @param x The magnitude in x-direction.
-	 * @param y The magnitude in y-direction.
+	 * @param x The magnitude in x-direction of this new force.
+	 * @param y The magnitude in y-direction of this new force.
 	 */
 	Force(float x, float y);
 

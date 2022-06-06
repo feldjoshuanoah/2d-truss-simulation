@@ -23,8 +23,8 @@ public:
 	/**
 	 * Constructs a new Support with the given support indicator booleans.
 	 * 
-	 * @param x Whether there is support in x-direction.
-	 * @param y Whether there is support in y-direction.
+	 * @param x Whether there is support in x-direction for this new support.
+	 * @param y Whether there is support in y-direction for this new support.
 	 */
 	Support(bool x, bool y);
 
