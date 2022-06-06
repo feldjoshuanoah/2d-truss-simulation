@@ -3,6 +3,16 @@
 
 Node::Node(float x, float y): x{x}, y{y} {}
 
+unsigned int Node::getId()
+{
+	return id;
+}
+
+void Node::setId(unsigned int id)
+{
+	this->id = id;
+}
+
 float Node::getX()
 {
 	return x;
