@@ -1,7 +1,7 @@
 #include "Node.h"
 #include <cmath>
 
-Node::Node(float x, float y): x{x}, y{y} {}
+Node::Node(unsigned int id, float x, float y): id{id}, x{x}, y{y} {}
 
 unsigned int Node::getId()
 {
